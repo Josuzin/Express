@@ -24,7 +24,7 @@ app.post("/api/forum/:name/:age/:height", (req, res) => {
     height: height,
     data: new Date().toLocaleTimeString(),
   });
-  res.send(dados);
+  res.send(dados); // ou res.json(dados)
 });
 
 app.listen(port, () => {
